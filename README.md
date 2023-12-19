@@ -22,22 +22,22 @@
 ### Скрипты для создания таблиц бд:
 ```
 CREATE TABLE Components (
-    component_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    component_name TEXT NOT NULL,
-    component_type TEXT,
-    price NUMERIC,
+    component_id INT PRIMARY KEY AUTO_INCREMENT,
+    component_name VARCHAR(255) NOT NULL,
+    component_type VARCHAR(255),
+    price DECIMAL(10,2),
     release_year DATE,
-    manufacturer_id INTEGER,
+    manufacturer_id INT,
     FOREIGN KEY (manufacturer_id) REFERENCES Manufacturers(manufacturer_id)
 );
 ```
 
 ```
 CREATE TABLE Manufacturers (
-    manufacturer_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    manufacturer_name TEXT NOT NULL,
-    country TEXT,
-    foundation_year INTEGER
+    manufacturer_id INT PRIMARY KEY AUTO_INCREMENT,
+    manufacturer_name VARCHAR(255) NOT NULL,
+    country VARCHAR(255),
+    foundation_year INT
 );
 ```
 
