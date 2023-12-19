@@ -42,7 +42,7 @@ CREATE TABLE Manufacturers (
 ```
 
 ## Схема базы данных
-![ ](https://github.com/lJegerl/lab2_database/Таблицы.png)
+![ ](https://github.com/lJegerl/lab2_database/blob/main/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B.png)
 
 ## Примеры заполнения
 
